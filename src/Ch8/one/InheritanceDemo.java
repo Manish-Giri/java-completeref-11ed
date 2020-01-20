@@ -1,7 +1,7 @@
 package Ch8.one;
 
 class A implements TestInheritance{
-    int i,  j;
+    int i=6,  j;
 
     void showIJ() {
         System.out.println("In class A showIJ(), i and j = " + i + " " + j);
@@ -9,8 +9,8 @@ class A implements TestInheritance{
 }
 
 class B extends A {
-    int i = 6;
-    int k;
+    int i = 60;
+    int k = 35;
 
     @Override
     void showIJ() {
@@ -31,7 +31,7 @@ public class InheritanceDemo {
     public static void main(String[] args) {
 
         A superObj = new A();
-        superObj.i = 10;
+        //superObj.i = 10;
         superObj.j = 5;
 
 
@@ -42,7 +42,7 @@ public class InheritanceDemo {
 
 //      superObj.i = 10;
 //      superObj.j = 5;
-        superObj.showIJ();
+        //superObj.showIJ();
         subObj.showIJ();
         subObj.showSum();
     }
